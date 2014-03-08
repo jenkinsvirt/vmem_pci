@@ -4,6 +4,7 @@
 #include "hw/audio/pcspk.h"
 #include "hw/hw.h"
 
+//multi patches test.
 #define MEM_PCI_VENDOR_ID   0x1234
 #define MEM_PCI_DEVICE_ID   0x5678
 #define MEM_PCI_REVISION_ID 0x73
