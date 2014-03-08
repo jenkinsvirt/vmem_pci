@@ -2,17 +2,22 @@
 #include <linux/module.h>
 #include <linux/pci.h>
 #include <linux/init.h>
+
 #define MEM_PCI_VENDOR_ID 0x1234
 #define MEM_PCI_DEVICE_ID 0x5678
 #define MEM_PCI_REVISION_ID 0x73
+
 typedef unsigned char byte;
 typedef unsigned short int uint16;
 typedef unsigned int uint32;
+
 static struct pci_device_id ids[] = {
   { PCI_DEVICE(MEM_PCI_VENDOR_ID, MEM_PCI_DEVICE_ID), },
   { 0, }
 };
+
 MODULE_DEVICE_TABLE(pci, ids);
+
 static unsigned char skel_get_revision(struct pci_dev *dev)
 {
   u8 revision;
