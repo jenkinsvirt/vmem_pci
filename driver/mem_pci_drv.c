@@ -2,6 +2,7 @@
 #include <linux/module.h>
 #include <linux/pci.h>
 #include <linux/init.h>
+#include "vmem_pci.h"
 
 #define MEM_PCI_VENDOR_ID 0x1234
 #define MEM_PCI_DEVICE_ID 0x5678
